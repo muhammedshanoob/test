@@ -1,15 +1,11 @@
-i = 1
-x = 10
-for k in range(1, x+1):
-    c = 0
-    for j in range(1, i+1):
-        a = i % j
-        if a == 0:
-            c = c + 1
+flag=0
+for x in range (2, 11):
+	a = int (x/2) + 1
+	for y in range(2, a):
+		if ((x%y)==0):
+			flag=flag+1
+			break
+	if (flag == 0):
+		print (x)
+	flag=0
 
-    if c == 2:
-        print(i)
-    else:
-        k = k - 1
-
-    i = i + 1
