@@ -1,5 +1,5 @@
 flag=0
-for x in range (2, 11):
+for x in range (2, 101):
 	a = int (x/2) + 1
 	for y in range(2, a):
 		if ((x%y)==0):
